@@ -29,11 +29,3 @@ footer h4 {
     font-family: Courgette;
     font-size: medium;
 }
-}
-@media(min-width:960px) {
-    .footer-flex {
-        display: inline;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-}
