@@ -18,16 +18,22 @@ body {
 }
 
 footer {
+    padding: 20px;;
     background-color:#000000 ;
     color:#ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
 }
 footer a {
     color: #ffffff;
 }
-footer h3 {
+footer h4 {
     font-family: Courgette;
+    font-size: medium;
 }
-
+}
+@media(min-width:960px) {
+    .footer-flex {
+        display: inline;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

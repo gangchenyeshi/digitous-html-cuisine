@@ -10,8 +10,8 @@
 </head>
 <body>
     <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navbackground">
-            <a class="navbar-brand text-logo" href="#">Cui'zine</a>
+        <nav class="navbar navbar-expand-lg navbar-light  navbackground">
+            <a class="text-logo" href="#">Cui'zine</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,39 +42,75 @@
         </div>
     </div>
     
-    <div class="sub-heading">
+    <div class="container-fluid articles">
         <h3>Derniers articles</h3>
     </div>
 
-    <div>
-        <img src="/img/articles/suzette/suzette-small.jpg" alt="suzette">
-    </div>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3" >
+                    <img src="/img/articles/suzette/suzette-small.jpg" alt="suzette">
+            </div>
+            <div class="col-12 col-md-8 col-lg-6">
+                <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
+                <p>la franchise "Che Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au sarrazin!</p>
+            </div>
+            <div class="side-bar col-lg-3">
+                <h4>Recherche</h4>
+                <form class="block">
+                    <div class="form-group mb-2">
+                        <input type="text" class="form-control" placeholder="Recherche..">
+                    </div>
+                    <button type="button" class="btn btn-outline-dark button">Ok</button>
+                </form>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+                <img src="/img/articles/metro/metro-small.jpg" alt="suzette">
+            </div>
+            <div class="col-12 col-md-8 col-lg-6">
+                <h3>CLe métro dessert</h3>
+                <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. a voir absolument, mais qu'en est-il d'y aller pour manger? Clémentine entre en gare et nous donne son avis</p>
+            </div>
+            <div class="side-bar col-lg-3">
+                <h4>Newsletter</h4>
+                <form class="block">
+                    <div class="form-group mb-2">
+                        <input type="text" class="form-control" placeholder="Email..">
+                    </div>
+                    <button type="button" class="btn btn-outline-dark button">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3">
+                <img src="/img/articles/vitaly/vitaly-small.jpg" alt="suzette">
 
-    <div>
-        <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
-        <p>la franchise "Che Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au sarrazin!</p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6">
+                <h3>Vitaly, le v"gan italien</h3>
+                <p>Quant on pense itelien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                <p>Voir les articles précédents</p>
+            </div>
+            <div class="side-bar col-lg-3">
+                <h4>Partager</h4>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div>
-        <img src="/img/articles/metro/metro-small.jpg" alt="suzette">
-    </div>
-    <div>
-        <h3>CLe métro dessert</h3>
-        <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. a voir absolument, mais qu'en est-il d'y aller pour manger? Clémentine entre en gare et nous donne son avis</p>
-    </div>
-
-    <div>
-        <img src="/img/articles/vitaly/vitaly-small.jpg" alt="suzette">
-    </div>
-    <div>
-        <h3>Vitaly, le v"gan italien</h3>
-        <p>Quant on pense itelien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
-        <p>Voir les articles précédents</p>
-    </div>
-
-    <footer>
+        
+    
+    <footer class="footer-flex">
         <div>
-            <h3>Catégories</h3>
+            <h4>Catégories</h4>
             <div>
                 <a href="#">Revues</a>
             </div>
@@ -87,7 +123,7 @@
             
         </div>
         <div>
-            <h3>Achives</h3>
+            <h4>Achives</h4>
             <div>
                 <a href="#">2019</a>
             </div>
@@ -99,18 +135,18 @@
             </div>
         </div>
         <div>
-            <h3>Newsletter</h3>
-            <form action="form-inline form-flex">
-                <div class="form-group">
+            <h4>Newsletter</h4>
+            <form class="form-inline">
+                <div class="form-group mb-2">
                     <input type="text" class="form-control" placeholder="Email...">
                 </div>
-                <div>
+                
                     <button type="submit" class="btn btn-primary mb-2">S'inscrire</button>
-                </div>
+              
             </form>
     
             <div>
-                <h3>Partager</h3>
+                <h4>Partager</h4>
                 <div>
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>

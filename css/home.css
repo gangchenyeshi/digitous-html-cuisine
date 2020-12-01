@@ -8,8 +8,11 @@
     font-family: Courgette;
     font-size: 24px;
 }
-.navbackground, .jambotronbackground {
-    opacity: 0.9;
+.navbackground {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.jambotronbackground {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .logo-img {
     width: 100px;
@@ -25,4 +28,26 @@
 }
 div h3 {
     font-family: Courgette ;
+}
+.articles {
+    text-align: center;
+}
+.row div img {
+    width: 100%;
+}
+.side-bar {
+    display: none;
+}
+
+@media(min-width:992px) {
+    .side-bar {
+        display: block;
+    }
+    .button {
+        width: 100%;
+    }
+    .social-media a{
+        padding: 5%;
+        color: #000;
+    }
 }
