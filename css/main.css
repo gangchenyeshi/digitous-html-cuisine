@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Oswald;
+    src: url(./../fonts/Oswald-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Oswald;
+    src: url(./../fonts/Oswald-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Courgette;
+    src: url(./../fonts/Courgette-Regular.ttf);
+    font-weight: bold;
+}
+body {
+    font-family: Oswald
+}
+
+footer {
+    background-color:#000000 ;
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+footer a {
+    color: #ffffff;
+}
+footer h3 {
+    font-family: Courgette;
+}
+

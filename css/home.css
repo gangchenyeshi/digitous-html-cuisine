@@ -1,0 +1,28 @@
+.header {
+    background-image: url("../img/header.jpg");
+    background-position: center;
+}
+
+.text-logo {
+    color: #ffffff;
+    font-family: Courgette;
+    font-size: 24px;
+}
+.navbackground, .jambotronbackground {
+    opacity: 0.9;
+}
+.logo-img {
+    width: 100px;
+    height: 100px;
+}
+.jumbotron-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Courgette ;
+}
+div h3 {
+    font-family: Courgette ;
+}
