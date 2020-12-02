@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
 .preparation {
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    justify-content: end;
     align-items: left;
 }
 .preparation p {
@@ -125,8 +125,7 @@ h1, h2, h3, h4 {
         color: #000;
     }
     .row-center {
-        margin: 10px 18% 0 10px;
-        
+        margin: 10px 18% 0 10px;        
         justify-content: center;
     }
 }
