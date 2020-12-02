@@ -37,16 +37,63 @@ h1, h2, h3, h4 {
     justify-content: center;
     align-items: center;
 }
-.map-address {
+.preparation {
     display: flex;
     flex-direction: column;
+    justify-content: right;
+    align-items: left;
+}
+.preparation p {
+    background-color:  rgb(169, 179, 179);
+    width: 80px;
     padding: 10px;
+    text-align: center;
+}
+.button-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+
+}
+.button-type p {
+    background-color: rgb(127, 134, 134);
+    color: #fff;
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+.text-bottom {
+    align-items: center;
+}
+
+.first-photo {
+    background: url(../img/recipes/sponsored/dessert1.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+.second-photo {
+    background: url(../img/recipes/sponsored/side1.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+.third-photo {
+    background: url(../img/recipes/sponsored/dessert2.jpg);
+    width: 300px;
+    height: 200px;
+    background-size: cover;
 }
 .side-bar {
     display: none;
 }
 .address {
     padding-left: 20px;
+}
+.main-container div div {
+    margin: auto 10px;
 }
 @media(min-width:576px) {
     .profil-flex {

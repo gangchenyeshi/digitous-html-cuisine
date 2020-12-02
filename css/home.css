@@ -1,8 +1,13 @@
+
 .header {
     background-image: url("../img/header.jpg");
     background-position: center;
+   
+    
 }
-
+a {
+    color: white;
+}
 .text-logo {
     color: #ffffff;
     font-family: Courgette;
@@ -10,6 +15,8 @@
 }
 .navbackground {
     background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid white;
+    
 }
 .jambotronbackground {
     background-color: rgba(0, 0, 0, 0.7);
