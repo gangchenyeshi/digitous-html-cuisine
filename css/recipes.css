@@ -12,7 +12,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid white;
 }
-.jambotronbackground {
+.jambotronbackground{
     background-color: rgba(0, 0, 0, 0.7);
 }
 .logo-img {
@@ -27,27 +27,29 @@
     color: #ffffff;
     font-family: Courgette ;
 }
+.big-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
 h1, h2, h3, h4 {
     font-family: Courgette;
 }
 
-.profil-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.preparation {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: left;
-}
-.preparation p {
+.preparation-box {
     background-color:  rgb(169, 179, 179);
-    width: 80px;
+    width: 100px;
     padding: 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .button-type {
     display: flex;
@@ -60,72 +62,86 @@ h1, h2, h3, h4 {
     background-color: rgb(127, 134, 134);
     color: #fff;
     border-radius: 20px;
-    margin-right: 10px;
-    padding: 5px 10px;
+    margin-right: 5px;
+    padding: 2px 10px;
 }
 
-.text-bottom {
-    align-items: center;
+.box-3 {
+    padding: 10px;
 }
 
-.first-photo {
-    background: url(../img/recipes/sponsored/dessert1.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
+
+.box-4 {
 }
-.second-photo {
-    background: url(../img/recipes/sponsored/side1.jpg);
-    width: 300px;
-    height: 200px;
-    background-size: cover;
+
+
+.box-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-.third-photo {
-    background: url(../img/recipes/sponsored/dessert2.jpg);
+.box-5 div div img {
     width: 300px;
-    height: 200px;
-    background-size: cover;
 }
-.side-bar {
+.text-over-img {
+    position: relative;
+    text-align: center;
+    columns: white;
+}
+.text {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    padding: 5px 5px 2px 5px;
+    color: rgb(187, 161, 161);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.box-6 {
     display: none;
 }
-.address {
-    padding-left: 20px;
-}
-.main-container div div {
-    margin: auto 10px;
-}
+
+
+
+
 @media(min-width:576px) {
-    .profil-flex {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-    }   
-    .profil-flex div {
-        padding: 20px;
-    }   
-}
-@media(min-width:992px) {
-    .side-bar  {
-        display: block;
-        width: 20%;
+    .box-5{
+        justify-content: space-around;
     }
-    .main-container {
+
+    
+    .preparation-box {
+        background-color:  rgb(169, 179, 179);
+        width: 180px;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width:768px) {
+    .desptop-box {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding: 10px 20px;
+    }
+    
+    
+    .box-5{
+        justify-content: space-around;
+    }
+    .box-6 {
+        display: block;
+        width: auto;
+        margin: auto 10px;
     }
     .button {
         width: 100%;
     }
+    
     .social-media a{
         padding: 5%;
         color: #000;
-    }
-    .row-center {
-        margin: 10px 18% 0 10px;        
-        justify-content: center;
     }
 }
