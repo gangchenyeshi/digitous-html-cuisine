@@ -45,42 +45,57 @@ footer ul li a {
     display: none;
 }
 
+.social-media {
+    display: flex;
+    margin-left: 0px;
+}
+
+.social-media a {
+    margin-right: 4px;
+}
+
+.social-media .fa-facebook-square:hover, .social-media-side .fa-facebook-square:hover {
+    color: #3b5998 ;
+}
+.social-media .fa-instagram-square:hover, .social-media-side .fa-instagram-square:hover   {
+    color:#bc2a8d;
+}
+.social-media .fa-youtube-square:hover, .social-media-side .fa-youtube-square:hover   {
+    color: red;
+}
+.social-media .fa-twitter-square:hover, .social-media-side .fa-twitter-square:hover   {
+    color: #00acee;
+}
+
 @media(min-width:960px) {
     
     
 
-    .social-media {
-        display: flex;
-        margin-left: 10px;
-    }
     .side-bar {
         display: block;
     }
     .button {
         width: 100%;
     }
-
+    .social-media-side a {
+        color: black;
+        margin-right: 1px;
+        font-size: 24px;
+        background-color:white;
+        border-radius: 6px;
+        padding:3px;
+        height: 15px;
+        width: 15px;
+    }
     .social-media a {
         color: black;
-        margin-right: 10px;
-        font-size: 19px;
+        margin-right: 5px;
+        font-size: 24px;
         background-color:white;
         border-radius: 6px;
         padding:3px 10px;
         height: 15px;
         width: 15px;
-    }
-    .social-media .fa-facebook-square:hover  {
-        color: #3b5998 ;
-    }
-    .social-media .fa-instagram:hover  {
-        color: #bc2a8d;
-    }
-    .social-media .fa-youtube-square:hover  {
-        color: red;
-    }
-    .social-media .fa-twitter:hover  {
-        color: #00acee;
     }
 
     footer{
