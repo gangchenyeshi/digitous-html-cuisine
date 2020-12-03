@@ -16,8 +16,13 @@
 body {
     font-family: Oswald
 }
+h1, h2, h3, h4 {
+    font-family: Courgette;
+}
+
 footer {
     padding: 30px;
+    height: 550px;
 }
 
 footer {
@@ -36,17 +41,34 @@ footer ul li a {
     text-decoration: underline;
 }
 
+.side-bar {
+    display: none;
+}
+
 @media(min-width:960px) {
+    
+    
+
     .social-media {
         display: flex;
         margin-left: 10px;
     }
+    .side-bar {
+        display: block;
+    }
+    .button {
+        width: 100%;
+    }
+
     .social-media a {
         color: black;
-        margin-right: 5px;
+        margin-right: 10px;
         font-size: 19px;
         background-color:white;
         border-radius: 6px;
+        padding:3px 10px;
+        height: 15px;
+        width: 15px;
     }
     .social-media .fa-facebook-square:hover  {
         color: #3b5998 ;
@@ -59,5 +81,9 @@ footer ul li a {
     }
     .social-media .fa-twitter:hover  {
         color: #00acee;
+    }
+
+    footer{
+        height: 300px;
     }
 }
