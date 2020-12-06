@@ -40,10 +40,9 @@ img {
 }
 .text-wrap {
     float: left;
-    margin: 20px;
+    margin: 0 20px;
+    font-size: 70px;
 }
-
-
 .phototeam p {
     text-align: justify;
 }

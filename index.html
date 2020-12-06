@@ -2,7 +2,7 @@
 <html lang="fr">
 <head><meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Cui'zine</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/home.css">
@@ -18,21 +18,31 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#navbarNav">Accueil</a>
+                        <a class="nav-link" href="index.html">Accueil</a>
                     </li>
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="#">Equipe</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Equipe
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="teammember.html">Equipe Mamber</a>
+                          <a class="dropdown-item" href="team.html">Equipe Member Antony</a>
+                        </div>
+                      </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="recipes.html">Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="post.html">Post</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-
+<!-- finished Navbar -->
         <div class="jumbotron jambotronbackground">
             <div class="container jumbotron-flex">
                 <img src="./img/logo_square_white.png" alt="Logo cuizine" class="logo-img">
@@ -41,127 +51,127 @@
             </div>
         </div>
     </div>
-    
-    <div class="container-fluid articles">
-        <h3>Derniers articles</h3>
-    </div>
+     
+    <!-- finished Jambotron -->
 
     
-    <div class="container-fluid">
+    <div class="container">
+        <div class="row justify-content-center">
+            <h3 class="articles-title">Derniers articles</h3>
+        </div> 
+        
         <div class="row">
-            <div class="col-12 col-md-4 col-lg-3" >
-                    <img src="/img/articles/suzette/suzette-small.jpg" alt="suzette">
-            </div>
-            <div class="col-12 col-md-8 col-lg-6">
-                <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
-                <p>la franchise "Che Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au sarrazin!</p>
-            </div>
-            <div class="side-bar col-lg-3">
+            <div class="col-12 col-lg-8">
+                <div class="col-12 row">
+                    <div class="col-12 col-md-4" >
+                        <img class="img-fluid" src="/img/articles/suzette/suzette-small.jpg" alt="suzette" class="photo">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle</h3>
+                        <p>la franchise "Che Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrés, salés au froment ou au sarrazin!</p>
+                    </div>
+                </div>
+                
+                <div class="col-12 row">
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid"  src="/img/articles/metro/metro-small.jpg" alt="suzette">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h3>Le métro dessert</h3>
+                        <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. a voir absolument, mais qu'en est-il d'y aller pour manger? Clémentine entre en gare et nous donne son avis</p>
+                    </div>
+                </div>
+                
+                <div class="col-12 row">
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid"  src="/img/articles/vitaly/vitaly-small.jpg" alt="suzette">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <h3>Vitaly, le v"gan italien</h3>
+                        <p>Quant on pense itelien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                    </div>
+                                
+                </div>    
+                
+                   
+            </div>     <!-- / article finished-->
+
+
+            <div id="side-bar" class="col-lg-3 d-none d-lg-block">
                 <h4>Recherche</h4>
                 <form class="block">
-                    <div class="form-group mb-2">
+                    <div>
                         <input type="text" class="form-control" placeholder="Recherche..">
                     </div>
                     <button type="button" class="btn btn-outline-dark button">Ok</button>
                 </form>
-            </div>
-            
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
-                <img src="/img/articles/metro/metro-small.jpg" alt="suzette">
-            </div>
-            <div class="col-12 col-md-8 col-lg-6">
-                <h3>Le métro dessert</h3>
-                <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. a voir absolument, mais qu'en est-il d'y aller pour manger? Clémentine entre en gare et nous donne son avis</p>
-            </div>
-            <div class="side-bar col-lg-3">
+                
                 <h4>Newsletter</h4>
                 <form class="block">
-                    <div class="form-group mb-2">
-                        <input type="text" class="form-control" placeholder="Email..">
+                    <div>
+                        <input type="text" class="form-control" placeholder="Email...">
                     </div>
                     <button type="button" class="btn btn-outline-dark button">S'inscrire</button>
                 </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
-                <img src="/img/articles/vitaly/vitaly-small.jpg" alt="suzette">
-
-            </div>
-            <div class="col-12 col-md-8 col-lg-6">
-                <h3>Vitaly, le v"gan italien</h3>
-                <p>Quant on pense itelien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
-                <p>Voir les articles précédents</p>
-            </div>
-            <div class="side-bar col-lg-3">
                 <h4>Partager</h4>
-                <div class="social-media">
+                <div class="social-media-side">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
                     <a href="#"><i class="fab fa-youtube-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div>  
         
+            <div class="col-12">
+                <a href="nextpage.html" class="link-for-more"><p>&laquo; Voir les articles précédents</p></a>
+            </div>
+        </div>      
+    </div>    
+
+   
+        <!-- footer start-->
     
     <footer>
-        <div class="row justify-content-between">
-            <div class="col-12 col-lg-4">
-                <div>
-                    <h4>Catégories</h4>
-                <div>
-                    <a href="#">Revues</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <h3>Catégories</h3>
+                    <ul>
+                        <li><a href="#">Revues</a></li>
+                        <li><a href="#">Recettes</a></li>
+                        <li><a href="#">Découvertes</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <a href="#">Recettes</a>
+
+                <div class="col-12 col-lg-4">
+                    <h3>Achives</h3>
+                    <ul>
+                        <li><a href="#">2019</a></li>
+                        <li><a href="#">2018</a></li>
+                        <li><a href="#">2017</a></li>
+                    </ul>
                 </div>
-                <div>
-                    <a href="#">Découvertes</a>
-                </div>
-                </div>
-            </div>
-        
-            <div class="col-12 col-lg-4">
-                <div>
-                    <h4>Achives</h4>
-                    <div>
-                        <a href="#">2019</a>
-                    </div>
-                    <div>
-                        <a href="#">2018</a>
-                    </div>
-                    <div>
-                        <a href="#">2017</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <h4>Newsletter</h4>
-                <form class="form-inline">
-                <div class="form-group mb-2">
-                    <input type="text" class="form-control" placeholder="Email...">
-                </div>
-                
-                    <button type="submit" class="btn btn-primary mb-2">S'inscrire</button>
-              
-                </form>
-    
-                <div>
+
+                <div class="col-12 col-lg-4">
+                    <h3>Newsletter</h3>
+                    <form class="form-inline">
+                        <div class="form-group mb-2">
+                            <input type="text" class="form-control" placeholder="Email...">
+                        </div>
+                        <button type="submit" class="btn btn-dark mb-2 inscrire">S'inscrire</button>
+                    </form>
+
                     <h4>Partager</h4>
-                    <div>
-                        <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube-square"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        
+
         
     </footer>
 
@@ -172,5 +182,6 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 </html>

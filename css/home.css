@@ -33,34 +33,32 @@ a {
     color: #ffffff;
     font-family: Courgette ;
 }
-h1, h2, h3, h4 {
-    font-family: Courgette;
-}
-div h3 {
-    font-family: Courgette ;
-}
-.articles {
-    text-align: center;
-    height: 70px;
+.articles-title {
+    padding-bottom: 20px;
 }
 .row div img {
     width: 100%;
 }
-.side-bar {
-    display: none;
-}
 .row {
     margin-bottom: 10px;
 }
+.link-for-more {
+    color: grey;
+    margin: 20px;
+}
+
+@media(min-width:768px) {
+    
+
+}
 @media(min-width:992px) {
-    .side-bar {
-        display: block;
+    .content {
+        max-width: 960px;
+        margin: auto;
     }
-    .button {
-        width: 100%;
-    }
-    .social-media a{
-        padding: 5%;
-        color: #000;
-    }
+    
+.img-fluid {
+    padding-top: 15px;
+}
+
 }

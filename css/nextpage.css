@@ -1,6 +1,12 @@
+
 .header {
     background-image: url("../img/recipes/paella/paella-small.jpg");
     background-position: center;
+   
+    
+}
+a {
+    color: white;
 }
 .text-logo {
     color: #ffffff;
@@ -10,8 +16,9 @@
 .navbackground {
     background-color: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid white;
+    
 }
-.jambotronbackground{
+.jambotronbackground {
     background-color: rgba(0, 0, 0, 0.7);
 }
 .logo-img {
@@ -26,43 +33,32 @@
     color: #ffffff;
     font-family: Courgette ;
 }
-
-.button-type span {
-    background-color: rgb(127, 134, 134);
-    color: #fff;
-    border-radius: 20px;
-    padding: 0px 10px;
-    display: inline-block;
-    margin: 2px;
+.articles-title {
+    padding-bottom: 20px;
 }
-
-
-
-.text-over-img {
-    position: relative;
-    text-align: center;
-    columns: white;
-}
-.text-over-img img {
+.row div img {
     width: 100%;
-    margin-top: 10px;
 }
-.text {
-    position: absolute;
-    bottom: 2px;
-    left: 2px;
-    padding: 5px 5px 2px 5px;
-    color: rgb(187, 161, 161);
-    background-color: rgba(0, 0, 0, 0.6);
+.row {
+    margin-bottom: 10px;
 }
-
-
-
-@media(min-width:576px) {
-    
+.link-for-more {
+    color: grey;
+    margin: 20px;
 }
 
 @media(min-width:768px) {
     
+
+}
+@media(min-width:992px) {
+    .content {
+        max-width: 960px;
+        margin: auto;
+    }
+    
+.img-fluid {
+    padding-top: 15px;
+}
 
 }

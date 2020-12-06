@@ -77,6 +77,10 @@ footer ul li a {
     .button {
         width: 100%;
     }
+    .inscrire {
+        margin-left:5px;
+        border:1px solid white;
+    }
     .social-media-side a {
         color: black;
         margin-right: 1px;
